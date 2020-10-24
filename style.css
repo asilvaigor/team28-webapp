@@ -59,6 +59,18 @@
   background-color: #323541;
 }
 
+
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 280px;
+   position: absolute;
+   top: 0;
+   width: -webkit-calc(100% - 280px);
+   width:    -moz-calc(100% - 280px);
+   width:         calc(100% - 280px);
+}
+
 body {
   background-color: #caccd6;
   line-height: 30px;

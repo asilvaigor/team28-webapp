@@ -7,44 +7,35 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel="stylesheet" href="./style.css">
 
+<script language="javascript">
+    function changeSrc(i) {
+        if (i == 0) {
+            document.getElementById("serviceFrameSend").src = "./gentrification.html";
+        } else {
+            document.getElementById("serviceFrameSend").src = "./311calls.html";
+        }
+    }
+</script>
+
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<nav class="sidenav">
-    <ul class="main-buttons">
-      <li>
-        <i class="fa fa-circle fa-2x"></i>
-        Lorem Ipsum 
-        <ul class="hidden">
-          <li>TK-421</li>
-          <li>why aren't </li>
-          <li>you at </li>
-          <li>your post?</li>
-        </ul>
-      </li>
-      <li>
-        <i class="fa fa-circle fa-2x"></i>
-        Dolor Sit
-        <ul class="hidden">
-          <li>Dark</li>
-          <li>Wings</li>
-          <li>Dark</li>
-          <li>Words</li>
-          <li>John SNUUW</li>
-        </ul>
-      </li>
-      <li>
-        <i class="fa fa-circle fa-2x"></i>
-         Consectetur
-         <ul class="hidden">
-          <li>Lorem</li>
-          <li>Ipsum</li>
-          <li>Dolor</li>
-        </ul>
-      </li>
-    </ul>
-</nav>
-<!-- partial -->
+
+<div class="">
+	<nav class="sidenav">
+	    <ul class="main-buttons">
+	      <li onclick="changeSrc(0)">
+	      	Gentrification status
+	      </li>
+	      <li onclick="changeSrc(1)">
+		311 Calls
+	      </li>
+	    </ul>
+	</nav>
+
+	<div class="iframe-container">
+		<iframe id="serviceFrameSend" src="./gentrification.html" width="1000" height="1000"  frameborder="0">
+	</div>
+</div>
   
 </body>
 </html>
