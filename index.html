@@ -11,8 +11,10 @@
     function changeSrc(i) {
         if (i == 0) {
             document.getElementById("serviceFrameSend").src = "./gentrification.html";
-        } else {
+        } else if (i == 1) {
             document.getElementById("serviceFrameSend").src = "./311calls.html";
+        } else {
+            document.getElementById("serviceFrameSend").src = "./build_dates.html";
         }
     }
 </script>
@@ -28,6 +30,9 @@
 	      </li>
 	      <li onclick="changeSrc(1)">
 		311 Calls
+	      </li>
+	      <li onclick="changeSrc(2)">
+		Number of buildings
 	      </li>
 	    </ul>
 	</nav>
